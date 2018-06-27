@@ -8,7 +8,6 @@ import com.zgc.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -75,6 +74,7 @@ public class UserController extends BaseController {
 
     @RequestMapping("toNewPage")
     public String toNewPage(){
+        //加上前缀和后缀，组成新的url地址，页面跳转
         return "test";
     }
 }
